@@ -1,17 +1,19 @@
-import './App.css';
-import {Routes, Route} from 'react-router-dom'; 
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Navbar from './components/navi/Navbar';
+import Sidebar from './components/sidebar/Sidebar';
 
-// import './../dist/output.css'
 
 function App() {
   return (
-    <div>
+    <div className=' bg-green-300'>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-      </Routes>
+      <div className='flex'>
+        <Sidebar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+        </Routes>
+      </div>
     </div>
   );
 }
