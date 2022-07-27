@@ -3,9 +3,8 @@ import React from 'react'
 const Sidebar = () => {
   return (
     <div>
-      <div>Add</div>
+      <button>Add Workspace</button>
       <div>Recent</div>
-      
     </div>
   )
 }
